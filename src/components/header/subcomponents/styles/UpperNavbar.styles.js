@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { BiPlusMedical, BiSearch } from "react-icons/bi";
 import { RiNewspaperLine, RiCalendar2Line } from "react-icons/ri";
 import { BiMenu } from "react-icons/bi";
+import { AiFillCaretDown } from "react-icons/ai";
 
 export const Container = styled.div`
   display: flex;
@@ -9,6 +10,10 @@ export const Container = styled.div`
 
   svg {
     cursor: pointer;
+  }
+
+  b {
+    margin-left: 5px;
   }
 
   button {
@@ -49,12 +54,6 @@ export const Content = styled.div`
 
     img {
       margin-left: 6px;
-    }
-
-    svg {
-      margin-left: 2px;
-      rotate: 180deg;
-      height: 10px;
     }
   }
 
@@ -202,4 +201,9 @@ export const MenuContainer = styled.div`
   @media screen and (max-width: 1224px) {
     display: none;
   }
+`;
+export const DownArrow = styled(AiFillCaretDown)`
+  height: 15px;
+  width: auto;
+  margin-left: 5px;
 `;

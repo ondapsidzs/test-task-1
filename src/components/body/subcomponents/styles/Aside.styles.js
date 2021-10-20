@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BiPlusMedical, BiCheck } from "react-icons/bi";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export const MainContainer = styled.div`
   width: 100%;
@@ -40,7 +41,7 @@ export const Container = styled.div`
     width: 8px;
     border-radius: 4px;
     background: #2478cc;
-    margin-right: 14px;
+    margin-right: 10px;
   }
 
   .days {
@@ -91,11 +92,10 @@ export const ArrowDown = styled(MdOutlineKeyboardArrowDown)`
     right: 0;
   }
 `;
-export const ArrowRight = styled(MdOutlineKeyboardArrowDown)`
+export const ArrowRight = styled(MdOutlineKeyboardArrowRight)`
   height: 20px;
   width: auto;
-  rotate: -90deg;
-  transform: translateY(-5px);
+  transform: translateX(-5px);
 `;
 export const ProgressContainer = styled.div`
   position: relative;

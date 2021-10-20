@@ -1,5 +1,4 @@
 import React from "react";
-import { IoTriangle } from "react-icons/io5";
 
 import LowerNavbar from "./LowerNavbar";
 
@@ -16,6 +15,7 @@ import {
   CalendarIcon,
   Username,
   Menu,
+  DownArrow,
 } from "./styles/UpperNavbar.styles";
 
 import Profile from "../../../images/Profile.jpg";
@@ -41,9 +41,9 @@ const UpperNavbar = ({ sideMenuToggler }) => {
               <CalendarIcon />
             </div>
             <div className="user-div">
-              <Username>
+              <Username className="flex ai-c">
                 Welcome Back, <b>Alen</b>
-                <IoTriangle />
+                <DownArrow />
               </Username>
               <img src={Profile} alt="" />
             </div>
