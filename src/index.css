@@ -12,7 +12,7 @@ html {
 
 body {
   font-size: 100%;
-  overflow-x: hidden;
+  overflow-x: none;
   overflow-anchor: none;
 }
 
