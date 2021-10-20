@@ -12,8 +12,14 @@ html {
 
 body {
   font-size: 100%;
-  overflow-x: none;
+  overflow-x: hidden;
   overflow-anchor: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 button {
