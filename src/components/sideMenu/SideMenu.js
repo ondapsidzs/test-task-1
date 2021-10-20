@@ -1,7 +1,5 @@
 import React from "react";
 
-import { IoTriangle } from "react-icons/io5";
-
 import ProfileImage from "../../images/Profile.jpg";
 
 import {
@@ -17,6 +15,7 @@ import {
   MenuContainer,
   ArrowDown,
   Close,
+  DownArrow,
 } from "./SideMenu.styles";
 
 const SideMenu = ({ sideMenuToggler, sideMenuOpen }) => {
@@ -27,7 +26,7 @@ const SideMenu = ({ sideMenuToggler, sideMenuOpen }) => {
         <Profile className="flex ai-c">
           <div className="flex ai-c">
             Welcome Back, <b> Alen</b>
-            <IoTriangle />
+            <DownArrow />
           </div>
           <img src={ProfileImage} alt="" />
         </Profile>

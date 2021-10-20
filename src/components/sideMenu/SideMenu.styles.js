@@ -4,11 +4,12 @@ import { BiSearch } from "react-icons/bi";
 import { RiNewspaperLine, RiCalendar2Line } from "react-icons/ri";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
+import { AiFillCaretDown } from "react-icons/ai";
 
 export const Container = styled.div`
   display: none;
   box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media screen and (max-width: 1224px) {
     position: fixed;
@@ -207,4 +208,9 @@ export const Close = styled(IoClose)`
   &:hover {
     opacity: 0.6;
   }
+`;
+export const DownArrow = styled(AiFillCaretDown)`
+  height: 15px;
+  width: auto;
+  margin-left: 5px;
 `;

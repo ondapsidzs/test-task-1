@@ -30,6 +30,10 @@ export const Container = styled.div`
     &:hover {
       opacity: 0.8;
     }
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
   }
 
   span {
